@@ -1,0 +1,15 @@
+name: 'Suggest Related PR'
+description: 'Check to see if any pull requests share a similar title in other repositories for the organization'
+inputs:
+  GITHUB_TOKEN:        #Github token      
+    description: 'Github token for the repository.'
+    required: true
+  owner:
+    description: 'github repository owner to search'
+    required: true
+  repository:
+    description: 'github repository name to search'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
