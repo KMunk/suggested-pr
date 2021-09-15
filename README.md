@@ -1,1 +1,1 @@
-# Suggeste Pull Requests Action
+# Suggested Pull Requests Action
