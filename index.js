@@ -16,7 +16,7 @@ try{
 
     const octokit = new github.GitHub(githubToken);
     
-    const { data: pullRequests } = await octokit.rest.pulls.list({
+    const { data: pullRequests } = octokit.rest.pulls.list({
         owner: owner,
         repo: repo,
         state: 'open',
