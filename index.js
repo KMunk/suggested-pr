@@ -14,7 +14,7 @@ try{
     const pullRequestNumber = context.payload.pull_request.number;
     const headRef = `${owner}:${context.payload.pull_request.head.ref}`
 
-    const octokit = new github.GitHub(githubToken);
+    const octokit = new github.getOctokit(githubToken);
     
     const { data: pullRequests } = octokit.rest.pulls.list({
         owner: owner,
